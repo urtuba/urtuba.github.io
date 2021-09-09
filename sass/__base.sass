@@ -1,0 +1,31 @@
+$color-1: rgb(145, 230, 115)
+$color-2: rgb(230, 145, 115)
+$color-3: rgb(115, 145, 230)
+
+$medium-screen-min: 700px
+$large-screen-min: 1025px
+
+@mixin md
+    @media (min-width: $medium-screen-min)
+        @content
+
+@mixin lg
+    @media (min-width: $large-screen-min)
+        @content
+
+*
+    margin: 0
+    padding: 0
+
+body
+    font-family: monospace
+    background: rgb(200, 200, 200)
+
+a
+    color: inherit
+    text-decoration: none
+
+.offscreen
+    position: fixed
+    left: -10000px
+

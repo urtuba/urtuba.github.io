@@ -1,0 +1,89 @@
+@import "__base.sass";
+
+.logo-color-1
+    color: $color-1 !important
+
+.logo-color-2
+    color: $color-2 !important
+
+.logo-color-3
+    color: $color-3 !important
+
+.logo-color-4
+    color: $color-1 !important
+
+.logo-color-5
+    color: $color-2 !important
+
+#header
+    background: rgb(0,0,0)
+    position: fixed
+    left: 0
+    top: 0
+    width: 100vw
+
+#header-inside-box
+    width: 100vw
+    height: 3rem
+    width: 100vw
+
+#logo
+    display: block
+    background: rgb(50, 50, 50)
+    font-size: 2.2rem
+    font-weight: 500
+    margin: 0
+    float: left
+    padding: 1rem 2rem
+
+#logo span
+    display: inline-block
+    margin: 0 -0.5rem   
+
+#nav
+    display: none
+    font-size: 2.2rem
+    float: right
+
+    @include md
+        display: inline
+        padding: 1rem 0 
+
+#menu-list
+    list-style-type: none
+    margin: 0
+
+#menu-list li
+    display: inline-block
+    color: $color-2
+    text-align: center
+
+    @include md
+        font-weight: 300
+        margin-right: 0.5rem
+        padding: 1rem
+        padding-right: 0.5rem
+        display: inline
+        background: rgb(50, 50, 50)
+        transition: transform 0.2s
+
+    @include lg
+        margin-right: 0.8rem
+
+#menu-list li :hover
+    color: $color-3
+
+#dropdown-menu
+    background: rgb(50, 50, 50)
+    float: right
+    font-size: 2rem
+    color: rgb(240,230,220)
+    padding: 15px
+
+    a :hover
+        color: $color-1
+
+    @include md
+        display: none
+        
+    
