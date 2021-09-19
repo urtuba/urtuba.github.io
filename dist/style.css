@@ -156,11 +156,11 @@ a {
 
 main {
   background-color: ivory;
-  min-height: calc(100vh - 8rem);
+  min-height: calc(100vh - 7rem);
   postion: fixed;
   left: 0;
   top: 0;
-  margin-top: 5rem;
+  margin-top: 4rem;
   padding: 0;
 }
 
