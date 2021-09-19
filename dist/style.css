@@ -48,7 +48,7 @@ a {
 
 #header-inside-box {
   width: 100vw;
-  height: 3rem;
+  height: 4rem;
   width: 100vw;
 }
 
@@ -120,12 +120,12 @@ a {
   background: #323232;
   float: right;
   font-size: 2rem;
-  color: #f0e6dc;
+  color: #91e673;
   padding: 15px;
 }
 
 #dropdown-menu a :hover {
-  color: #91e673;
+  color: #7391e6;
 }
 
 @media (min-width: 700px) {
@@ -156,7 +156,7 @@ a {
 
 main {
   background-color: ivory;
-  min-height: calc(100vh - 7rem);
+  min-height: calc(100vh - (4rem + 3rem));
   postion: fixed;
   left: 0;
   top: 0;

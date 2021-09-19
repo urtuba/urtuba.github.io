@@ -1,14 +1,11 @@
 @import '__base.sass';
 
 
-$headerHeight: 4rem
-$footerHeight: 3rem
-
 main
     background-color: ivory
-    min-height: calc(100vh - 7rem)
+    min-height: calc(100vh - (#{$header-height} + #{$footer-height}))
     postion: fixed
     left: 0
     top: 0
-    margin-top: $headerHeight
+    margin-top: $header-height
     padding: 0
