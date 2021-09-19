@@ -53,23 +53,27 @@
 #menu-list
     list-style-type: none
     margin: 0
+    margin-block-start: 0
+    margin-block-end: 0
+    padding-inline-start: 0
+
+    @include md
+        display: block
 
 #menu-list li
     display: inline-block
+    justify-content: center
     color: $color-2
     text-align: center
+    width: auto
 
     @include md
         font-weight: 300
-        margin-right: 0.5rem
         padding: 1rem
-        padding-right: 0.5rem
         display: inline
         background: $dark-color
         transition: transform 0.2s
 
-    @include lg
-        margin-right: 0.8rem
 
 #menu-list li :hover
     color: $color-3

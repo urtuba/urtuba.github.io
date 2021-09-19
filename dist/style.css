@@ -83,32 +83,40 @@ a {
 #menu-list {
   list-style-type: none;
   margin: 0;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+}
+
+@media (min-width: 700px) {
+  #menu-list {
+    display: block;
+  }
 }
 
 #menu-list li {
   display: inline-block;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: #e69173;
   text-align: center;
+  width: auto;
 }
 
 @media (min-width: 700px) {
   #menu-list li {
     font-weight: 300;
-    margin-right: 0.5rem;
     padding: 1rem;
-    padding-right: 0.5rem;
     display: inline;
     background: #323232;
     -webkit-transition: -webkit-transform 0.2s;
     transition: -webkit-transform 0.2s;
     transition: transform 0.2s;
     transition: transform 0.2s, -webkit-transform 0.2s;
-  }
-}
-
-@media (min-width: 1025px) {
-  #menu-list li {
-    margin-right: 0.8rem;
   }
 }
 
