@@ -24,14 +24,24 @@
                 <nav id="nav">
                     <ul id="menu-list"><li><a href="#">HOW</a></li>
                         <li><a href="#">ABOUT</a></li>
-                        <li><a href="#">LINKS</a></li></ul>
+                        <li><a href="#">LINKS</a></li>
+                    </ul>
                 </nav>
-                <div id="dropdown-menu">
+                <div id="dropdown-menu-icon" onclick="showDropdownMenu()">
                     <a href="#"><i class="fas fa-caret-square-down"></i></a>
                 </div>
             </div>
         </div>
     </header>
+    <div id="dropdown-menu">
+        <nav id="dropdown-menu-nav">
+            <ul id="dropdown-menu-list">
+                <a href="#"><li>HOW</li></a>
+                <a href="#"><li>ABOUT</li></a>
+                <a href="#"><li>LINKS</li></a>
+            </ul>
+        </nav>
+    </div>
     <main>
         <div class="main">
             <h1>Lorem Ipsum</h1>
@@ -49,6 +59,6 @@
             </div>
         </div>
     </footer>
-
+    <script src="script.js"></script>
 </body>
 </html>

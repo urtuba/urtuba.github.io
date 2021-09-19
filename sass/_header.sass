@@ -17,7 +17,8 @@
     color: $color-2 !important
 
 #header
-    background: black
+    height: $header-height
+    background: $header-background
     position: fixed
     left: 0
     top: 0
@@ -25,15 +26,16 @@
 
 #header-inside-box
     width: 100vw
-    height: $header-height
     width: 100vw
 
 #logo
     display: block
     background: $dark-color
-    font-size: 2.2rem
-    font-weight: 500
+    font-size: 2rem
+    line-height: 2rem
+    font-weight: 700
     margin: 0
+    margin-left: 1rem
     float: left
     padding: 1rem 2rem
 
@@ -43,7 +45,8 @@
 
 #nav
     display: none
-    font-size: 2.2rem
+    font-size: 2rem
+    line-height: 2rem
     float: right
 
     @include md
@@ -53,9 +56,7 @@
 #menu-list
     list-style-type: none
     margin: 0
-    margin-block-start: 0
-    margin-block-end: 0
-    padding-inline-start: 0
+    padding: 0 1rem
 
     @include md
         display: block
@@ -63,32 +64,63 @@
 #menu-list li
     display: inline-block
     justify-content: center
-    color: $color-2
+    color: $body-background
     text-align: center
     width: auto
 
     @include md
+        margin: 0
         font-weight: 300
         padding: 1rem
         display: inline
         background: $dark-color
-        transition: transform 0.2s
+        transition: transform 0.2
 
 
 #menu-list li :hover
-    color: $color-3
+    color: $color-2
 
-#dropdown-menu
+#dropdown-menu-icon
     background: $dark-color
     float: right
     font-size: 2rem
-    color: $color-1
+    line-height: 2rem
+    color: $body-background
     padding: 15px
+    margin-right: 1rem
 
     a :hover
-        color: $color-3
+        color: $color-2
 
     @include md
         display: none
         
-    
+#dropdown-menu
+    display: none
+    position: fixed
+    top: $header-height
+    width: 100vw
+    transition: 1s
+
+    @include md
+        display: none
+
+#dropdown-menu-nav
+    background-color: $header-background
+
+#dropdown-menu-list
+    display: block
+    list-style: none
+    list-style-type: none
+    padding: 0.5rem 0
+
+    a li
+        border: 2px solid $dark-color
+        font-size: 2rem
+        font-weight: 600
+        text-align: center
+        padding: 0.4rem
+        margin: 0.4em 1rem
+
+    a:hover li
+        background: $color-2
