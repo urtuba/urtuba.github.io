@@ -2,10 +2,14 @@
 
 
 main
-    background-color: ivory
-    min-height: calc(100vh - (#{$header-height} + #{$footer-height}))
+    border-left: 1rem solid $header-background
+    border-right: 1rem solid $header-background
+    min-height: calc(100vh - (#{$header-height} + #{$footer-height} + 4rem))
     postion: fixed
     left: 0
     top: 0
     margin-top: $header-height
-    padding: 0
+    padding: 2rem
+
+
+    
