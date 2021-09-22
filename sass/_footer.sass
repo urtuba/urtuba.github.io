@@ -2,16 +2,28 @@
 
 
 #footer
-    background: $dark-color
-    border: 1px solid black
-    height: $footer-height
+    display: block
+    background: $header-background
     width: 100vw
-    display: table
-    overflow: hidden
+    height: $footer-height
     
+#footer-container
+    display: table
+    background: $dark-color
+    height: $footer-height
+    color: $body-background
+    width: 20rem
+    margin: 0 auto
+
+    @include md
+        width: 30rem
+
+    @include lg
+        widht: 40rem
+
 #footer-content
-    color: $light-color
+    color: $body-background
+    font-weight: 400
     display: table-cell
     vertical-align: middle
     text-align: center
-    opacity: 0.8

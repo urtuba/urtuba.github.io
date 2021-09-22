@@ -235,6 +235,7 @@ main {
   top: 0;
   margin-top: 4rem;
   padding: 2rem;
+  color: #28323c;
 }
 
 * {
@@ -270,18 +271,36 @@ a {
 }
 
 #footer {
+  display: block;
+  background: #b6b6b6;
+  width: 100vw;
+  height: 3rem;
+}
+
+#footer-container {
+  display: table;
   background: #28323c;
   height: 3rem;
-  padding: 0 3rem 0 3rem;
+  color: #fafafa;
+  width: 20rem;
   margin: 0 auto;
-  display: table;
-  overflow: hidden;
-  border-left: 30vw #b6b6b6 solid;
-  border-right: 30vw #b6b6b6 solid;
+}
+
+@media (min-width: 700px) {
+  #footer-container {
+    width: 30rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  #footer-container {
+    widht: 40rem;
+  }
 }
 
 #footer-content {
   color: #fafafa;
+  font-weight: 400;
   display: table-cell;
   vertical-align: middle;
   text-align: center;
